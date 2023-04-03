@@ -1,5 +1,5 @@
 package PEstructurada.Ejercicios;
-import com.sun.security.jgss.GSSUtil;
+
 
 import java.util.Scanner;
 public class Ejercicio12
@@ -52,10 +52,10 @@ public class Ejercicio12
             }
             antiquity=read.nextInt();
         }
-        int totalCar=littleUse+newCar+muchUse+vintage;
-        double average=years/totalCar-vintage;
+        int totalCar=littleUse+newCar+muchUse+vintage;//despues de procesar los datos
+        double average=years/(totalCar-vintage);
         System.out.println("Cantidad total de autos: "+totalCar);
         System.out.println("Cantidad de autos con poco uso: "+littleUse);
-        System.out.println("Promedio de los autos que no son antiguos: "+average);
+        System.out.println("Promedio de antiguedad de los autos que no son antiguos: "+average);
     }
 }
